@@ -143,7 +143,7 @@
 
   <!-- CONTENTS -->
   <div
-    class="relative top-[-800px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
+    class="relative top-[-850px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
     style="
       background: linear-gradient(
         180deg,
@@ -399,7 +399,7 @@
   </div>
   <!-- CONTENT 2 -->
   <div
-    class="relative top-[-750px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
+    class="relative top-[-800px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
     style="
       background: linear-gradient(
         180deg,
@@ -656,7 +656,7 @@
 
   <!-- CONTENT 3 -->
   <div
-    class="relative top-[-700px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
+    class="relative top-[-750px] flex items-center justify-center mx-40 rounded-xl border-2 border-[#38171d]"
     style="
       background: linear-gradient(
         180deg,

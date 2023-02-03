@@ -28,7 +28,7 @@
           Read
         </router-link>
         <router-link
-        to="/post"
+        to="/uwu"
           class="absolute top-5 right-5 flex items-center rounded-md bg-[#CF6D41] px-6 py-4 mb-10 text-3xl text-[#38171D] font-extrabold shadow-sm bg-opacity-90 transition-all duration-200 hover:bg-opacity-100 hover:scale-110"
         >
           <img

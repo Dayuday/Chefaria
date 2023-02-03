@@ -155,27 +155,23 @@
             <div class="text-xl text-[#38171D] font-extrabold">
               Introduction
             </div>
-            <div class="text-[#38171D] font-bold">
-                UwU
-            </div>
+            <div class="text-[#38171D] font-bold">UwU</div>
             <div class="mt-5 text-xl text-[#38171D] font-extrabold">
               Ingredients
             </div>
             <div class="text-[#38171D] font-bold">
-                UwU <br />
-                UwU <br />
-                UwU
+              UwU <br />
+              UwU <br />
+              UwU
             </div>
             <div class="mt-5 text-xl text-[#38171D] font-extrabold">
               Step 1:
             </div>
-            <div class="text-[#38171D] font-bold">
-              UwU
-            </div>
+            <div class="text-[#38171D] font-bold">UwU</div>
             <div class="mt-5 text-xl text-[#38171D] font-extrabold">
               Step 2:
             </div>
-            <div class="text-[#38171D] font-bold">
+            <div class="text-[#38171D] font-bold mb-20 pb-20">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
               fuga vitae repudiandae! Repellat architecto, quod veniam porro
               cumque consequuntur!

@@ -251,7 +251,7 @@ export default {
   computed: {
     bgStyle() {
       return {
-        minHeight: `${window.innerHeight + 290}px`,
+        minHeight: `${window.innerHeight + 400}px`,
       };
     },
   },
