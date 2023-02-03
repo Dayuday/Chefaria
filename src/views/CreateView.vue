@@ -27,7 +27,8 @@
         >
           Read
         </router-link>
-        <button
+        <router-link
+        to="/post"
           class="absolute top-5 right-5 flex items-center rounded-md bg-[#CF6D41] px-6 py-4 mb-10 text-3xl text-[#38171D] font-extrabold shadow-sm bg-opacity-90 transition-all duration-200 hover:bg-opacity-100 hover:scale-110"
         >
           <img
@@ -36,7 +37,7 @@
             width="48"
           />
           Dinner's Ready!
-        </button>
+      </router-link>
       </div>
 
       <!-- ADD IMAGE -->
@@ -88,7 +89,7 @@
         <input
           v-model="title"
           placeholder="Content Title..."
-          class="flex-1 relative placeholder-[#E5C99F] text-[#E5C99F] transition-all duration-300 border-[#38171D] border-4 text-3xl font-extrabold rounded-md pt-5 pb-5 pr-10 pl-5 outline-none overflow-auto hover:border-[#892B2C]"
+          class="flex-1 relative placeholder-[#E5C99F] text-[#E5C99F] transition-all duration-300 border-[#38171D] border-4 text-3xl font-extrabold rounded-md pt-5 pb-5 pl-5 outline-none overflow-auto hover:border-[#892B2C]"
           style="
             background: linear-gradient(
               311.85deg,

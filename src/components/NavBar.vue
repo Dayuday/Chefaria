@@ -64,7 +64,7 @@
                   class="flex flex-col space-y-5 align-items-start text-left"
                 >
                   <router-link
-                    to="/"
+                    to="/home"
                     class="pt-0 text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                     ><img
                       src="public/Spoon-icon.png"
@@ -91,7 +91,7 @@
                     RECIPES
                   </router-link>
                   <router-link
-                    to="/about"
+                    to="/specialty"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                     ><img
                       src="public/Fork-icon.png"
@@ -100,7 +100,7 @@
                     SPECIALTY
                   </router-link>
                   <router-link
-                    to="/specialty"
+                    to="/contact"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                     ><img
                       src="public/Spoon-icon.png"
@@ -109,7 +109,7 @@
                     CONTACT
                   </router-link>
                   <router-link
-                    to="/contact"
+                    to="/about"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                     ><img
                       src="public/Fork-icon.png"
@@ -178,7 +178,7 @@
             class="hidden lg:flex lg:items-center lg:space-x-10 pt-5 ml-auto"
           >
             <router-link
-              to="/"
+              to="/home"
               class="mb-20 text-[#38171D] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#892B2C] focus:text-[#892B2C]"
               active-class="text-[#892B2C] hover:text-[#892B2C]"
             >
@@ -516,74 +516,6 @@
             </router-link>
           </div>
 
-          <!-- Account Menu Sidebar -->
-          <!-- <div class="relative w-14 h-14 top-0 right-0 mb-10">
-                    <button @click="accountMenuIsOpen = !accountMenuIsOpen">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0">
-                            <circle cx="23.9996" cy="24" r="24" fill="#CF6D41"></circle>
-                        </svg>
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-1 left-1" style="z-index: 1;">
-                            <circle cx="19.9996" cy="20" r="20" fill="url(#paint0_linear_168_279)"></circle>
-                        <defs>
-                            <linearGradient id="paint0_linear_168_279" x1="19.9996" y1="0" x2="19.9996" y2="40" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#892B2C"></stop>
-                                <stop offset="1" stop-color="#CF6D41"></stop>
-                            </linearGradient>
-                        </defs>
-                        </svg>
-                        <img src="public/Add-icon.png" class="w-8 h-8 object-cover rotate-45 absolute top-50 left-50 z-10 ml-2 -translate-y-3"/>
-                    </button>
-
-                    <div :class="[{'open': accountMenuIsOpen}, 'fixed', 'top-0', 'left-0', 'h-screen', 'w-screen', 'bg-[#892B2C]', 'backdrop-blur-3xl', 'opacity-95', 'z-20', accountMenuSidebarTransform, 'transition-transform', 'duration-300', 'ease-in-out']" class="flex justify-content-end" style="background: linear-gradient(to left, rgba(137,43,44,0.9) 36.17%, rgba(137,43,44,0.77) 64.82%, rgba(137,43,44,0.67) 79.56%, rgba(137,43,44,0.45) 95.39%, rgba(137,43,44,0.22) 100%);">
-                      <button class="overflow-y-scroll-hidden max-h-screen ml-auto text-right">
-                          <nav class="flex flex-col space-y-5 align-items-start justify-content-start mr-20 pr-20 sm:mt-10 sm:pt-8">
-                              <router-link to="/" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> Account <img src="public/Account-icon-male.png" class="inline-block mr-2 h-10 w-10" /></router-link>
-                              <router-link to="/categories" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> Bookmarks <img src="public/Bookmarks-icon.png" class="inline-block mr-2 h-10 w-10" /></router-link>
-                              <router-link to="/recipes" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> Courses <img src="public/Courses-icon.png" class="inline-block mr-2 h-10 w-10" /></router-link>
-                              <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> Notifications <img src="public/Notification-icon.png" class="inline-block mr-2 h-10 w-10" /></router-link>
-                              <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> Logout <img src="public/Logout-icon.png" class="inline-block mr-2 h-10 w-10" /></router-link>
-                          </nav>
-                      </button>
-
-                      <button @click="accountMenuIsOpen = false" class="absolute top-0 right-0 inline-flex p-2 mt-6 mr-7 mb-20 sm:mr-10 lg:mr-10 lg:pl-4 lg:pb-8 lg:pr-5 lg:pt-4 lg:ml-10 lg:w-20 lg:h-20 flex-grow-0 flex-shrink-0 w-12 h-12 object-cover transition ease-in-out duration-300 hover:scale-150">
-                          <div></div>
-                              <img src="public/Account-Menu-Close-icon.png"/>
-                      </button>
-                    </div>  
-                </div> -->
-
-          <!-- <div class="relative">
-                    <button @click="accountMenuIsOpen = !accountMenuIsOpen">
-                          <img src="public/Quick-tabs-menu.png" class="inline-flex p-2 ml-5 mb-10 xs:ml-0 xs:pr-2 xs:pr-0 flex-grow-0 flex-shrink-0 w-12 h-13 object-cover" />
-                    </button>
-
-                    <div :class="[{'open': accountMenuIsOpen}, 'justify-items-start', 'fixed', 'top-0', 'left-0', 'h-screen', 'w-screen', 'bg-[#892B2C]', 'backdrop-blur-3xl', 'opacity-95', 'z-20', accountMenuSidebarTransform, 'transition-transform', 'duration-300', 'ease-in-out']" style="background: linear-gradient(to right, rgba(137,43,44,0.9) 36.17%, rgba(137,43,44,0.77) 64.82%, rgba(137,43,44,0.67) 79.56%, rgba(137,43,44,0.45) 95.39%, rgba(137,43,44,0.22) 100%);">
-                        <button class="overflow-y-scroll-hidden max-h-screen text-right pr-20 ml-auto">
-                            <nav class=" flex flex-col space-y-5 align-items-start justify-content-start">
-                                <router-link to="/" class="pt-0 text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> HOME <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/categories" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> CATEGORIES <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/recipes" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> RECIPES <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> SPECIALTY <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> CONTACT <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> ABOUT <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                            </nav>
-
-                            <button class="flex flex-col item-center space-y-5 mt-10 ml-auto">
-                                <img src="public/Facebook-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Instagram-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Pinterest-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Twitter-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/YouTube-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                            </button>
-                        </button> 
-
-                        <button @click="accountMenuIsOpen = false">
-                            <div class="mb-7"></div>
-                            <img src="public/Quick-Tabs-Menu-Close-icon.png" class="inline-flex mb-20 p-2 mr-3 sm:mr-5 flex-grow-0 flex-shrink-0 w-12 h-12 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                        </button>
-                    </div>
-                </div> -->
-
           <div class="relative">
             <button
               @click="accountMenuIsOpen = !accountMenuIsOpen"
@@ -680,7 +612,7 @@
                       class="inline-block mr-2 h-10 w-10"
                   /></router-link>
                   <router-link
-                    to="/categories"
+                    to="/"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                   >
                     Bookmarks
@@ -689,7 +621,7 @@
                       class="inline-block mr-2 h-10 w-10"
                   /></router-link>
                   <router-link
-                    to="/recipes"
+                    to="/"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                   >
                     Courses
@@ -698,7 +630,7 @@
                       class="inline-block mr-2 h-10 w-10"
                   /></router-link>
                   <router-link
-                    to="/about"
+                    to="/"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                   >
                     Notifications
@@ -707,7 +639,7 @@
                       class="inline-block mr-2 h-10 w-10"
                   /></router-link>
                   <router-link
-                    to="/about"
+                    to="/"
                     class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"
                   >
                     Logout
@@ -755,40 +687,6 @@
               </button>
             </div>
           </div>
-
-          <!-- <div class="relative">
-                    <button @click="accountMenuIsOpen = !accountMenuIsOpen">
-                          <img src="public/Quick-tabs-menu.png" class="inline-flex p-2 ml-5 mb-10 xs:ml-0 xs:pr-2 xs:pr-0 flex-grow-0 flex-shrink-0 w-12 h-13 object-cover" />
-                    </button>
-
-                    <div :class="[{'open': accountMenuIsOpen}, 'fixed', 'top-0', 'left-0', 'h-screen', 'w-screen', 'bg-[#892B2C]', 'backdrop-blur-3xl', 'opacity-95', 'z-20', accountMenuSidebarTransform, 'transition-transform', 'duration-300', 'ease-in-out']" class="flex justify-content-end" style="background: linear-gradient(to left, rgba(137,43,44,0.9) 36.17%, rgba(137,43,44,0.77) 64.82%, rgba(137,43,44,0.67) 79.56%, rgba(137,43,44,0.45) 95.39%, rgba(137,43,44,0.22) 100%);">
-                      <button class="overflow-y-scroll-hidden max-h-screen text-right ml-auto">
-                          <nav class="flex flex-col space-y-5 align-items-start justify-content-start mr-20">
-                                <router-link to="/" class="pt-0 text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> HOME <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/categories" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> CATEGORIES <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/recipes" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> RECIPES <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> SPECIALTY <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> CONTACT <img src="public/Spoon-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                                <router-link to="/about" class="text-[#E5C99F] text-md font-bold tracking-widest transition-all duration-200 hover:text-[#CF6D41] focus:text-[#CF6D41] transition ease-in-out duration-300 hover:scale-150"> ABOUT <img src="public/Fork-icon.png" class="inline-block rotate-[225deg] mr-2 h-6 w-6" /></router-link>
-                            </nav>
-
-                            <button class="flex flex-col item-center space-y-5 mt-10 ">
-                                <img src="public/Facebook-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Instagram-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Pinterest-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/Twitter-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                                <img src="public/YouTube-icon-light.png" class="flex-grow-0 flex-shrink-0 w-6 h-6 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                            </button>
-                        </button> 
-
-                        <button @click="accountMenuIsOpen = false">
-                            <div class="mb-7"></div>
-                            <img src="public/Quick-Tabs-Menu-Close-icon.png" class="inline-flex mb-20 p-2 mr-3 justify-content-start sm:mr-5 flex-grow-0 flex-shrink-0 w-12 h-12 object-cover transition ease-in-out duration-300 hover:scale-150" />
-                        </button>
-                    </div>
-                </div> -->
-
-          <!-- <button class="mb-10 items-center justify-center px-6 py-3 xs:text-[8px] xs:py-2 xs:px-2 sm:text-[12px] sm:py-4 sm:px-4 lg:text-[18px] font-bold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full inline-flex hover:bg-yellow-500 focus:bg-yellow-500"> Join Now </button> -->
         </nav>
       </div>
     </div>
@@ -799,9 +697,8 @@
 export default {
   methods: {
     submitSearch() {
-      // Do something when enter is pressed, like calling an API or mutating a variable
       const inputValue = this.$refs.input.value.trim().toLowerCase();
-      if (inputValue === "home" || inputValue === "about") {
+      if (inputValue === "home" || inputValue === "categories" || inputValue === "recipes" || inputValue === "specialty" || inputValue === "contact" || inputValue === "about") {
         this.$router.replace(`/${inputValue}`);
         this.openSearch = false;
       }
