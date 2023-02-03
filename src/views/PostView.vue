@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative top-[-850px] flex items-center justify-center flex-col mx-40 rounded-xl border-2 border-[#38171d]"
+    class="relative top-[-950px] flex items-center justify-center flex-col mx-40 rounded-xl border-2 border-[#38171d]"
     style="
       background: linear-gradient(
         180deg,
